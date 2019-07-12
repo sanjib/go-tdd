@@ -7,7 +7,7 @@ The 3 laws of TDD
 2. Fail, then make it work
 3. Refactor
 
-## 1.hello
+## 1. hello
 
 Key points
 
@@ -19,13 +19,20 @@ Key points
 - use t.Helper() to mark helper test function
 - named returns doesn't look so bad [[...]](#quote-named-return)
 
-## 2.integers
+## 2. integers
 
 Key points
 
 - example functions can be added in xxx_test.go
 - ExampleXxx function will be shown in documentation
 - output syntax: // Output: xxx 
+
+## 3. iteration
+
+Key points
+
+- benchmark functions can be placed in xxx_test.go
+- BenchmarkXxx where Xxx = function to benchmark
 
 ## Quotes 
 
@@ -34,6 +41,8 @@ The following quotes are from https://quii.gitbook.io/learn-go-with-tests/
 >By not writing tests you are committing to ***manually checking your code by running your software which breaks your state of flow*** and you won't be saving yourself any time, especially in the long run.
 
 >Write enough code to satisfy the compiler and _that's all_ - remember ***we want to check that our tests fail for the correct reason***.
+
+>Keep the discipline! You don't need to know anything new right now to make the test fail properly.
 
 The following quotes are from the blue book http://www.gopl.io/
 
