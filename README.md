@@ -21,7 +21,11 @@ Key points
 
 ## 2.integers
 
+Key points
 
+- example functions can be added in xxx_test.go
+- ExampleXxx function will be shown in documentation
+- output syntax: // Output: xxx 
 
 ## Quotes 
 
