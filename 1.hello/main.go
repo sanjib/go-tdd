@@ -21,9 +21,10 @@ func Hello(name string, lang string) string {
 	if name == "" {
 		name = defaultReceiver
 	}
+	return greeting(lang) + name
+}
 
-	greeting := englishGreeting
-
+func greeting(lang string) (greeting string) {
 	switch lang {
 	case spanish:
 		greeting = spanishGreeting
@@ -31,7 +32,8 @@ func Hello(name string, lang string) string {
 		greeting = frenchGreeting
 	case bengali:
 		greeting = bengaliGreeting
+	default:
+		greeting = englishGreeting
 	}
-
-	return greeting + name
+	return
 }
