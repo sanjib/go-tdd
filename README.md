@@ -1,5 +1,5 @@
 # go-tdd
-TDD exercises based on the excellent learn-go-with-tests by @quii
+TDD exercises based on the excellent learn-go-with-tests by quii: https://quii.gitbook.io/learn-go-with-tests/
 
 The 3 laws of TDD
 
@@ -11,10 +11,19 @@ The 3 laws of TDD
 
 Key points
 
-- test file format: *xxx_test.go* where xxx = go file name
+- test file format: xxx_test.go where xxx = go file name
 - test function format: TestXxx() where Xxx = function name
 - test variable naming convention: got, want
 - t *testing.T is the hook into the testing framework
 - constants can improve readability and performance 
-- use t.Helper() in helper test function
-- 
+- use t.Helper() to mark helper test function
+
+
+## Quotes 
+
+The following quotes are from https://quii.gitbook.io/learn-go-with-tests/
+
+>By not writing tests you are committing to manually checking your code by running your software which breaks your state of flow and you won't be saving yourself any time, especially in the long run.
+
+
+
