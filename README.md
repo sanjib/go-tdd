@@ -19,11 +19,17 @@ Key points
 - use t.Helper() to mark helper test function
 - named returns doesn't look so bad [[...]](#quote-named-return)
 
+## 2.integers
+
+
+
 ## Quotes 
 
 The following quotes are from https://quii.gitbook.io/learn-go-with-tests/
 
->By not writing tests you are committing to manually checking your code by running your software which breaks your state of flow and you won't be saving yourself any time, especially in the long run.
+>By not writing tests you are committing to ***manually checking your code by running your software which breaks your state of flow*** and you won't be saving yourself any time, especially in the long run.
+
+>Write enough code to satisfy the compiler and _that's all_ - remember ***we want to check that our tests fail for the correct reason***.
 
 The following quotes are from the blue book http://www.gopl.io/
 
