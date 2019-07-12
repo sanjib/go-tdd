@@ -15,4 +15,6 @@ Key points
 - test function format: TestXxx() where Xxx = function name
 - test variable naming convention: got, want
 - t *testing.T is the hook into the testing framework
- 
+- constants can improve readability and performance 
+- use t.Helper() in helper test function
+- 
