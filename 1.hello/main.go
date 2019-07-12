@@ -4,9 +4,13 @@ import "fmt"
 
 const spanish = "Spanish"
 const french = "French"
+const bengali = "Bengali"
+
 const englishGreeting = "Hello, "
 const spanishGreeting = "Hola, "
 const frenchGreeting = "Bonjour, "
+const bengaliGreeting = "Slamalaikum, "
+
 const defaultReceiver = "World"
 
 func main() {
@@ -19,11 +23,14 @@ func Hello(name string, lang string) string {
 	}
 
 	greeting := englishGreeting
-	if lang == spanish {
+
+	switch lang {
+	case spanish:
 		greeting = spanishGreeting
-	}
-	if lang == french {
+	case french:
 		greeting = frenchGreeting
+	case bengali:
+		greeting = bengaliGreeting
 	}
 
 	return greeting + name

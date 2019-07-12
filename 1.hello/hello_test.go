@@ -9,6 +9,11 @@ func TestHello(t *testing.T) {
 			t.Errorf("got %q want %q", got, want)
 		}
 	}
+	t.Run("lang arg Bengali", func(t *testing.T) {
+		got := Hello("Amma", "Bengali")
+		want := "Slamalaikum, Amma"
+		assertCorrectMessage(t, got, want)
+	})
 	t.Run("lang arg French", func(t *testing.T) {
 		got := Hello("Tasnima", "French")
 		want := "Bonjour, Tasnima"
