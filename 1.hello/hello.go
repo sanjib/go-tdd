@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package hello
 
 const spanish = "Spanish"
 const french = "French"
@@ -12,10 +10,6 @@ const frenchGreeting = "Bonjour, "
 const bengaliGreeting = "Slamalaikum, "
 
 const defaultReceiver = "World"
-
-func main() {
-	fmt.Println(Hello("world", ""))
-}
 
 func Hello(name string, lang string) string {
 	if name == "" {
