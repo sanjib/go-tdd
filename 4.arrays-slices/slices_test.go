@@ -42,7 +42,7 @@ func TestSlice(t *testing.T) {
 		want := []string{"g", "o"}
 		assertString(t, got, want, given)
 	})
-	t.Run(`array copy via ref`, func(t *testing.T) {
+	t.Run(`a slice from a slice is still a ref.`, func(t *testing.T) {
 		given := [3]string{"Лайка", "Белка", "Стрелка"}
 		got := given[:]
 		got[1] = "Belka"
@@ -51,7 +51,7 @@ func TestSlice(t *testing.T) {
 			t.Errorf("got %v, wanted %v, given %#v", got, want, given)
 		}
 	})
-	t.Run(`array copy via value`, func(t *testing.T) {
+	t.Run(`copy from a slice is a new slice`, func(t *testing.T) {
 		given := [3]string{"Лайка", "Белка", "Стрелка"}
 		got := make([]string, len(given))
 		copy(got, given[:])

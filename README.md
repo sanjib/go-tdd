@@ -1,5 +1,8 @@
 # go-tdd
 TDD exercises based on the excellent learn-go-with-tests by quii: https://quii.gitbook.io/learn-go-with-tests/
+The following are my personal notes derived from following the book. I have tried to be as
+brief as possible for my own benefit and include only what was interesting to
+me or thought that I should remember.
 
 The 3 laws of TDD
 
@@ -64,7 +67,7 @@ Quotes:
 x := [3]string{"Лайка", "Белка", "Стрелка"} // type of x [3]string
 s := x[:] // a slice referencing the storage of x, type of s []string
 ```
-- array copy via ref. vs value: https://play.golang.org/p/MglIxX8Av4J
+- slice vs slice & copy: https://play.golang.org/p/bTrRmYfNYCp
 - after slicing, if the new slice length is less than the original, 
 then it's better to copy it so that the original can be garbage
  collected: https://play.golang.org/p/Poth8JS28sc 
