@@ -1,13 +1,21 @@
 package pointers_errors
 
+import "fmt"
+
+type Bitcoin int
+
 type Wallet struct {
-	balance float64
+	balance Bitcoin
 }
 
-func (w *Wallet) Deposit(amount float64) {
+func (w *Wallet) Deposit(amount Bitcoin) {
 	w.balance += amount
 }
 
-func (w *Wallet) Balance() float64 {
+func (w *Wallet) Balance() Bitcoin {
 	return w.balance
+}
+
+func (b Bitcoin) String() string {
+	return fmt.Sprintf("%d BTC", b)
 }

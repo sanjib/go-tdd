@@ -108,7 +108,7 @@ Quotes from Test-Driven Development by Example, by Kent Beck:
 - it's important to fail correctly with the right error message
 - micro incremental test iteration might not be versioned but needs to 
 be followed to create good tests
-
+- methods are declared on types: whether structs or types created from existing types
 
 Quotes:
 
