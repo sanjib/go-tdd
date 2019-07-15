@@ -99,3 +99,6 @@ Quotes:
 
 > In Go interface resolution is implicit. If the type you pass in matches what the interface is asking for, it will compile.
 
+Quotes from Test-Driven Development by Example, by Kent Beck:
+
+> The test speaks to us more clearly, as if it were an assertion of truth, not a sequence of operations
