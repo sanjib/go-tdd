@@ -106,9 +106,10 @@ Quotes from Test-Driven Development by Example, by Kent Beck:
 ## 6. pointers, errors
 
 - it's important to fail correctly with the right error message
-- micro incremental test iteration might not be versioned but needs to 
-be followed to create good tests
+- write minimal amount of code for test to run, then check failing test output
+- micro incremental test iteration needs to be followed to create good reliable tests
 - methods are declared on types: whether structs or types created from existing types
+- errors.New creates a new error with a message of your choosing
 
 Quotes:
 
