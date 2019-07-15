@@ -88,3 +88,14 @@ In the context of slices:
 > most programs don't need complete control, so Go provides a built-in append function that's good for most purposes
 
 > re-slicing a slice doesn't make a copy of the underlying array
+
+## 5. structs, methods and interfaces
+
+- consider table-driven tests where the data can be used to drive the tests
+- interfaces with possible tests of different data are good candidates for 
+table-driven tests 
+
+Quotes:
+
+> In Go interface resolution is implicit. If the type you pass in matches what the interface is asking for, it will compile.
+

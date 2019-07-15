@@ -9,23 +9,26 @@ func TestPerimeter(t *testing.T) {
 			t.Errorf("got %#f, want %#f", got, want)
 		}
 	}
-	t.Run(`get perimeter from length and width`, func(t *testing.T) {
-		got := Perimeter(10.0, 10.0)
+	t.Run(`rectangle get perimeter`, func(t *testing.T) {
+		rectangle := Rectangle{10.0, 10.0}
+		got := Perimeter(rectangle)
 		want := 40.0
 		assert(t, got, want)
 	})
 }
 
 func TestArea(t *testing.T) {
-	assert := func(t *testing.T, got, want float64) {
-		t.Helper()
-		if got != want {
-			t.Errorf("got %#v, want %#v", got, want)
+	areaTests := []struct {
+		shape Shape
+		want  float64
+	}{
+		{Rectangle{12.0, 6.0}, 72.0},
+		{Circle{10}, 314.1592653589793},
+	}
+	for _, tt := range areaTests {
+		got := tt.shape.Area()
+		if got != tt.want {
+			t.Errorf("got %#v, want %#v", got, tt.want)
 		}
 	}
-	t.Run(`get area from width and height`, func(t *testing.T) {
-		got := Area(12.0, 6.0)
-		want := 72.0
-		assert(t, got, want)
-	})
 }
