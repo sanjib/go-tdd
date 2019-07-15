@@ -102,3 +102,15 @@ Quotes:
 Quotes from Test-Driven Development by Example, by Kent Beck:
 
 > The test speaks to us more clearly, as if it were an assertion of truth, not a sequence of operations
+
+## 6. pointers, errors
+
+- it's important to fail correctly with the right error message
+- micro incremental test iteration might not be versioned but needs to 
+be followed to create good tests
+
+
+Quotes:
+
+> Remember to only do enough to make the tests run. We need to make sure our test fails correctly with a clear error message.
+
