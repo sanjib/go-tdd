@@ -117,3 +117,13 @@ Quotes:
 
 ## 7. maps
 
+- maps are reference types
+- never initialize empty map which is a nil
+- trying to write to nil will cause panic: assignment to entry in nil map
+- if key doesn't exist, we get the type's "zero" value https://play.golang.org/p/Btz1HnnnDWg
+
+Quotes:
+
+> Maps being a reference is really good, because no matter how big a map gets there will only be one copy.
+
+> attempts to write to a nil map will cause a runtime panic
