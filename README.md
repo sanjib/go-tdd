@@ -181,3 +181,13 @@ Quotes:
 > Let's define our dependency as an interface. This lets us then use a real Sleeper in main and a spy sleeper in our tests.
 
 
+## 10. concurrency
+
+- race conditions test: ```go test -race```
+
+Quotes:
+
+> Everything you need to know is printed to your terminal - all you have to do is be patient enough to read it.
+
+> Make it work, make it right, make it fast
+
