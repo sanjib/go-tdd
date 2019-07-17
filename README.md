@@ -136,6 +136,10 @@ to the interface
 - in di_test.go a buffer is passed as io.Writer to Greet
 - uncomment the code in main.go to see the same Greet function in 
 action in two other scenarios: output to console, output to browser
+- 3 examples of io.Writer:
+    - bytes.Buffer
+    - os.Stdout
+    - http.ResponseWriter
 
 Quotes:
 
