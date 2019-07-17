@@ -127,3 +127,17 @@ Quotes:
 > Maps being a reference is really good, because no matter how big a map gets there will only be one copy.
 
 > attempts to write to a nil map will cause a runtime panic
+
+## 8. dependency injection
+
+- implementation uses an interface so that different calling 
+functions depending on use can pass different objects that confirm
+to the interface 
+- in di_test.go a buffer is passed as io.Writer to Greet
+- uncomment the code in main.go to see the same Greet function in 
+action in two other scenarios: output to console, output to browser
+
+Quotes:
+
+> The more familiar you are with the standard library the more you'll see these general purpose interfaces which you can then re-use in your own code to make your software reusable in a number of contexts
+
