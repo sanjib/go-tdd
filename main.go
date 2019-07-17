@@ -12,12 +12,6 @@ import (
 	"time"
 )
 
-type DefaultSleeper struct{}
-
-func (s DefaultSleeper) Sleep() {
-	time.Sleep(1 * time.Second)
-}
-
 func main() {
 	// Uncomment relevant sections to run
 
@@ -28,6 +22,6 @@ func main() {
 	//}))
 
 	// Testing for 9.mocking
-	sleeper := DefaultSleeper{}
-	mo.Countdown(os.Stdout, &sleeper)
+	sleeper := &mo.ConfigurableSleeper{1 * time.Second, time.Sleep}
+	mo.Countdown(os.Stdout, sleeper)
 }
