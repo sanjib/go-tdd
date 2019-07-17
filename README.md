@@ -145,3 +145,39 @@ Quotes:
 
 > The more familiar you are with the standard library the more you'll see these general purpose interfaces which you can then re-use in your own code to make your software reusable in a number of contexts
 
+## 9. mocking
+
+- implementation has 
+```
+type Sleeper interface {
+	Sleep()
+}
+```
+- test has
+```
+type SpySleeper struct {
+	Calls int
+}
+func (s *SpySleeper) Sleep() {
+	s.Calls++
+}
+```
+- main has
+```
+type DefaultSleeper struct{}
+func (s DefaultSleeper) Sleep() {
+	time.Sleep(1 * time.Second)
+}
+```
+
+Quotes:
+
+> let's now wire up our function into a main so we have some working software to reassure ourselves we're making progress
+
+> Take a thin slice of functionality and make it work end-to-end, backed by tests
+
+> By investing in getting the overall plumbing working right, we can iterate on our solution safely and easily
+
+> Let's define our dependency as an interface. This lets us then use a real Sleeper in main and a spy sleeper in our tests.
+
+
