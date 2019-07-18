@@ -1,16 +1,25 @@
 package selectpkg
 
 import (
+	"fmt"
 	"net/http"
 	"time"
 )
 
-func RacerUsingConcurrency(a, b string) string {
+var tenSecondTimeout = 5 * time.Second
+
+func RacerUsingConcurrency(a, b string) (string, error) {
+	return RacerUsingConcurrencyWithTimeout(a, b, tenSecondTimeout)
+}
+
+func RacerUsingConcurrencyWithTimeout(a, b string, timeout time.Duration) (string, error) {
 	select {
 	case <-ping(a):
-		return a
+		return a, nil
 	case <-ping(b):
-		return b
+		return b, nil
+	case <-time.After(timeout):
+		return "", fmt.Errorf("timed out after %#v waiting for %s and %s", timeout, a, b)
 	}
 }
 
