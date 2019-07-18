@@ -193,6 +193,11 @@ Quotes:
 
 ## 11. select
 
-
+- mock http testing server: 
+```
+httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+    w.WriteHeader(http.StatusOK)
+}))
+```
 
 > ideally we don't want to be relying on external services to test our code

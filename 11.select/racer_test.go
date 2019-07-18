@@ -7,6 +7,23 @@ import (
 	"time"
 )
 
+func TestRacerUsingConcurrency(t *testing.T) {
+	slowServer := makeServer(10 * time.Millisecond)
+	fastServer := makeServer(0 * time.Millisecond)
+	defer slowServer.Close()
+	defer fastServer.Close()
+
+	slowURL := slowServer.URL
+	fastURL := fastServer.URL
+
+	want := fastURL
+	got := RacerUsingConcurrency(slowURL, fastURL)
+
+	if got != want {
+		t.Errorf("got %q, want %q", got, want)
+	}
+}
+
 func TestRacer(t *testing.T) {
 	slowServer := makeServer(10 * time.Millisecond)
 	fastServer := makeServer(0 * time.Millisecond)
