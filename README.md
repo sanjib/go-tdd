@@ -191,3 +191,8 @@ Quotes:
 
 > Make it work, make it right, make it fast
 
+## 11. select
+
+
+
+> ideally we don't want to be relying on external services to test our code
