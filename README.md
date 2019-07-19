@@ -215,3 +215,9 @@ Quotes:
 
 > We use an anonymous struct with a Name field of type string to ***go for the simplest "happy" path***.
 
+> When you're doing a comparison on the same value more than once generally refactoring into a switch will improve readability and make your code easier to extend
+
+> This works but it's yucky. No worries, we have working code backed by tests so we are free to tinker all we like.
+
+> Refactoring is a journey and sometimes we will make mistakes. A major point of TDD is it gives us the freedom to try these things out.
+
