@@ -4,6 +4,11 @@ The following are my personal notes derived from following the book. I have trie
 brief as possible for my own benefit and include only what was interesting to
 me or thought that I should remember.
 
+You could use it as a review as you finish each section, or to reinforce your 
+learning later. The exercises are almost verbatim but not always. It might be 
+interesting to you that all exercises are in one repo as opposed to multiple
+repos for each section as suggested in the course.
+
 The 3 laws of TDD
 
 1. Write test first
@@ -203,3 +208,10 @@ httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request)
 - select case to run after timeout: ```case <-time.After(timeout)```
 
 > ideally we don't want to be relying on external services to test our code
+
+## 12. reflection
+
+Quotes: 
+
+> We use an anonymous struct with a Name field of type string to ***go for the simplest "happy" path***.
+
