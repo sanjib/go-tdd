@@ -211,11 +211,6 @@ httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request)
 
 ## 12. reflection
 
-- reflect methods:
-```
-
-```
-
 Quotes: 
 
 > We use an anonymous struct with a Name field of type string to ***go for the simplest "happy" path***.
@@ -226,3 +221,16 @@ Quotes:
 
 > Refactoring is a journey and sometimes we will make mistakes. A major point of TDD is it gives us the freedom to try these things out.
 
+## 13. sync
+
+- examine suspicious constructs, can find errors not caught by the compilers: ```go vet```
+
+Quotes from https://golang.org/pkg/sync:
+
+> A Mutex must not be copied after first use
+
+> Sometimes people forget that embedding types means the methods of that type becomes part of the public interface; and you often will not want that 
+
+Quotes from https://github.com/golang/go/wiki/MutexOrChannel:
+
+> Don't be afraid to use a sync.Mutex if that fits your problem best
