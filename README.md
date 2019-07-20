@@ -211,6 +211,11 @@ httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request)
 
 ## 12. reflection
 
+- reflect methods:
+```
+
+```
+
 Quotes: 
 
 > We use an anonymous struct with a Name field of type string to ***go for the simplest "happy" path***.
