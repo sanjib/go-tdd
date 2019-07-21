@@ -234,3 +234,15 @@ Quotes from https://golang.org/pkg/sync:
 Quotes from https://github.com/golang/go/wiki/MutexOrChannel:
 
 > Don't be afraid to use a sync.Mutex if that fits your problem best
+
+## 14. context
+
+
+
+Quotes: 
+
+> Remember to be disciplined with TDD. Write the minimal amount of code to make our test pass.
+
+Quotes from https://blog.golang.org/context:
+
+> 
