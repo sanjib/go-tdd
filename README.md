@@ -237,12 +237,23 @@ Quotes from https://github.com/golang/go/wiki/MutexOrChannel:
 
 ## 14. context
 
-
+- purpose: pass request-scoped values, cancelation signals, and deadlines
 
 Quotes: 
 
 > Remember to be disciplined with TDD. Write the minimal amount of code to make our test pass.
 
-Quotes from https://blog.golang.org/context:
+## 15. property based tests
 
-> 
+Quotes:
+
+> it might not be suitable for the end solution but that's OK. We can always throw our code away and start afresh with the tests we have to guide us
+
+> Go isn't strictly OO but that doesn't mean we ignore the lessons OO offers entirely (as much as some would like to tell you).
+
+Quotes from Go Doc:
+
+> A Builder is used to efficiently build a string using Write methods.
+It minimizes memory copying. The zero value is ready to use.
+Do not copy a non-zero Builder.
+
