@@ -251,6 +251,8 @@ Quotes:
 
 > Go isn't strictly OO but that doesn't mean we ignore the lessons OO offers entirely (as much as some would like to tell you).
 
+> The real challenge about property based tests is having a good understanding of your domain so you can write these properties
+
 Quotes from Go Doc:
 
 > A Builder is used to efficiently build a string using Write methods.
